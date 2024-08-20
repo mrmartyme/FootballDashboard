@@ -112,25 +112,25 @@ if page == "Team Stats Dashboard":
                 fig = px.bar(filtered_df, x=x_axis, y=column, color='TeamNM',
                              text='Game Label' if len(team_filter) > 1 else 'Opponent_Label',
                              title=f'{stat_name} by {x_label}', color_discrete_map=color_map,
-                             template='plotly_dark')  # Apply dark theme
+                             template='simple_white')  # Apply theme
 
                 fig.update_layout(barmode='group')  # Set bar mode to 'group' for side-by-side bars
 
             elif graph_type == "Line Chart":
                 fig = px.line(filtered_df, x=x_axis, y=column, color='TeamNM', title=f'{stat_name} by {x_label}',
-                              markers=True, color_discrete_map=color_map, template='plotly_dark')  # Apply dark theme
+                              markers=True, color_discrete_map=color_map, template='simple_white')  # Apply  theme
 
             elif graph_type == "Area Chart":
                 fig = px.area(filtered_df, x=x_axis, y=column, color='TeamNM', title=f'{stat_name} by {x_label}',
-                              color_discrete_map=color_map, template='plotly_dark')  # Apply dark theme
+                              color_discrete_map=color_map, template='simple_white')  # Apply  theme
 
             elif graph_type == "Scatter Plot":
                 fig = px.scatter(filtered_df, x=x_axis, y=column, color='TeamNM', title=f'{stat_name} by {x_label}',
-                                 trendline="ols", color_discrete_map=color_map, template='plotly_dark')  # Apply dark theme
+                                 trendline="ols", color_discrete_map=color_map, template='simple_white')  # Apply  theme
 
             elif graph_type == "Box Plot":
                 fig = px.box(filtered_df, x='TeamNM', y=column, color='TeamNM', title=f'{stat_name} Distribution',
-                             color_discrete_map=color_map, template='plotly_dark')  # Apply dark theme
+                             color_discrete_map=color_map, template='simple_white')  # Apply  theme
 
             # Update layout for better readability and responsive design
             fig.update_layout(
