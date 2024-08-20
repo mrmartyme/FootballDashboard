@@ -1,6 +1,26 @@
 import streamlit as st
 import pandas as pd
 
+# Inject custom CSS to force light mode
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    .reportview-container {
+        background-color: white !important;
+        color: black !important;
+    }
+    .schedule-table th, .schedule-table td {
+        background-color: white !important;
+        color: black !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # Load data
 teams_df = pd.read_csv('teams.csv')

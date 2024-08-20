@@ -2,8 +2,28 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-# Set Streamlit to use dark mode
 st.set_page_config(page_title="2023 Football Stats Dashboard", layout="wide", initial_sidebar_state="expanded")
+
+# Inject custom CSS to force light mode
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: white !important;
+        color: black !important;
+    }
+    .reportview-container {
+        background-color: white !important;
+        color: black !important;
+    }
+    .schedule-table th, .schedule-table td {
+        background-color: white !important;
+        color: black !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 # Page navigation (default to "Team Schedules")
 page = st.sidebar.radio("Choose a page", ["Team Schedules", "Team Stats Dashboard"])
