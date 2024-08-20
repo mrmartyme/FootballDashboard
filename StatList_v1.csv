@@ -1,0 +1,97 @@
+Column,Category,ShortName,Active
+TeamNM,Dimension,Team,1
+Date,Dimension,Dt,1
+Opponent,Dimension,Opp,1
+Result,Dimension,Result,1
+Passing_Pass Attempts,Passing,PassAtt,1
+Passing_Completions,Passing,Comp,1
+Passing_Interceptions,Passing,Int,1
+Passing_Pass Yards,Passing,PassYards,1
+Passing_PassTDs,Passing,PassTDs,1
+Passing_Pass Eff,Passing,PassEff,1
+Passing_Completions Per Game,Passing,CompPerGM,1
+Passing_Yds PerCompletion,Passing,PassYdsPerComp,1
+Passing_YdsPerAttempt,Passing,PassYdsPerAtt,1
+Rushing_Rush Attempts,Rushing,RushAtt,1
+Rushing_Rush Net Yards,Rushing,RushNet,1
+Rushing_Rush YdsGained,Rushing,RushGained,1
+Rushing_GainedYdsPerRush,Rushing,RushGainedPer,1
+Rushing_Rush YdsLost,Rushing,RushLost,1
+Rushing_Yds/Rush,Rushing,RushNetYdsPer,1
+Rushing_RushTDs,Rushing,RushTDs,1
+Receiving_Rec,Receiving,Recs,1
+Receiving_ReceivingYards,Receiving,RecYds,1
+Receiving_ReceptionsPer Game,Receiving,RecsPerGM,1
+Receiving_Yards PerReception,Receiving,RecYdsPer,1
+Receiving_Rec TD,Receiving,RecTDs,1
+Total Offense_YDS,Total Offense,TotalYDS,1
+Total Offense_T Yds/Play,Total Offense,YDSPerPlay,1
+Total Offense_3rd Att,Total Offense,3rdAtt,1
+Total Offense_4th Att,Total Offense,4thAtt,1
+Total Offense_3rd Conv,Total Offense,3rdConv,1
+Total Offense_TOP,Total Offense,TimeOfPos,1
+Total Offense_Plays,Total Offense,TotalPlays,1
+Total Offense_Tot Off,Total Offense,TotalOffYds,0
+Total Offense_Yds/Play,Total Offense,TotalOffYdsPerPlay,0
+Total Offense_Rushing First Downs,Total Offense,Rushing1sts,1
+Total Offense_Passing First Downs,Total Offense,Passing1sts,1
+Total Offense_First Downs by Penalty,Total Offense,PnltyGranted1sts,1
+Total Offense_Penalties,Total Offense,OffensivePntls,1
+Total Offense_PenaltiesPer Game,Total Offense,OffPnltyPerGm,1
+Total Offense_Penalty Yards,Total Offense,OffPntlyYds,1
+All-Purpose Yards_IntYds,All-Purpose Yards,IntYds,1
+All-Purpose Yards_ReceivingYards,All-Purpose Yards,AllPurpRecYds,0
+All-Purpose Yards_Int,All-Purpose Yards,AllPurpInt,0
+All-Purpose Yards_FRetYds,All-Purpose Yards,FumbRetYds,0
+All-Purpose Yards_Punt Ret Yds,All-Purpose Yards,PuntRetYds,1
+All-Purpose Yards_KO Ret Yds,All-Purpose Yards,KORetYds,0
+All-Purpose Yards_APY,All-Purpose Yards,TotalAllPurpYards,1
+Scoring_TDs,Scoring,TDs,1
+Scoring_Kick PAT,Scoring,KickPAT,1
+Scoring_PAT Att,Scoring,KickPATAtt,1
+Scoring_RushPAT,Scoring,RushPAT,1
+Scoring_Ru2PTAtt,Scoring,RushPATAtt,1
+Scoring_ReceivingPAT,Scoring,ReceivingPAT,0
+Scoring_Pass 2Pt Conv,Scoring,Pass 2Pt,1
+Scoring_Pass 2PT Att,Scoring,Pass2PtAtt,1
+Scoring_Kick ReturnPAT,Scoring,KickRetPAT,1
+Scoring_Fumb RetPAT,Scoring,FumbRetPAT,1
+Scoring_FG,Scoring,FGs,0
+Sacks_SackUA,Sacks,SackUA,1
+Sacks_SackA,Sacks,SackAsst,1
+Tackles_Solo Tack,Tackles,TacklSolo,1
+Tackles_Asst Tack,Tackles,TacklAsst,1
+Tackles_STFL,Tackles,TFLSolo,1
+Tackles_ATFL,Tackles,TFLAsst,1
+Passes Defended_IntYds,Passes Defended,IntYds,1
+Passes Defended_PBU,Passes Defended,PBU,1
+Passes Defended_Int,Passes Defended,Interceptions,1
+Fumbles_FF,Fumbles,FumblesForced,1
+Fumbles_FRet,Fumbles,FumbleReturnYds,1
+Kicking_FGM,Kicking,FGM,1
+Kicking_FGA,Kicking,FGA,1
+Punting_Punts inside 20,Punting,PuntsInside20,1
+Punting_Punts,Punting,Punts,1
+Punting_Punt Yds,Punting,PuntYds,1
+Punting_Punt Avg,Punting,PuntAvg,1
+Punting_Punt TBs,Punting,PuntTBs,1
+Punt Returns_Punt Ret,Punt Returns,PuntsReturned,1
+Kickoffs and KO Returns_KO,Kickoffs and KO Returns,KickOffs,1
+Kickoffs and KO Returns_KO Yds,Kickoffs and KO Returns,KickOffYds,1
+Kickoffs and KO Returns_KO TB,Kickoffs and KO Returns,KickOffTB,1
+Kickoffs and KO Returns_KO Ret,Kickoffs and KO Returns,KickoffsReturnedByTeam,1
+Kickoffs and KO Returns_Kick Ret TDs,Kickoffs and KO Returns,KickoffRetunedByTeamTD,1
+Kickoffs and KO Returns_KO Ret Yds,Kickoffs and KO Returns,KickoffReturnedByTeamYDS,1
+Redzone_RZScores,Redzone,RZScores,1
+Redzone_RZAtt,Redzone,RZAttempts,1
+Redzone_RZPts,Redzone,RZPts,1
+Redzone_RZ Rush TD,Redzone,RZEndOnRushTD,1
+Redzone_RZ Pass TD,Redzone,RZEndOnPassTD,1
+Redzone_RZ FG Made,Redzone,RZEndOnFGM,1
+Redzone_RZEndFGA,Redzone,RZEndOnFGA,1
+Redzone_RZEndFumble,Redzone,RZEndOnFumble,1
+Redzone_RZEndINT,Redzone,RZEndOnInt,1
+Redzone_RZEndDowns,Redzone,RZEndOnDowns,1
+Defense_Fumbles Recovered,Defense,DefFumbleRecov,1
+Turnover Margin_Fumbles Recovered,Turnover Margin,FumblesRecovered,1
+Turnover Margin_FumblesLost,Turnover Margin,FumblesLost,1
