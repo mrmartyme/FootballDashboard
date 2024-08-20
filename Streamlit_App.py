@@ -10,7 +10,7 @@ page = st.sidebar.radio("Choose a page", ["Team Schedules", "Team Stats Dashboar
 
 # Load data
 df = pd.read_csv(r'TeamDataFiles/All_Teams_Combined.csv', parse_dates=['Date'])
-statlist_df = pd.read_csv(r'statlist.csv')
+statlist_df = pd.read_csv(r'StatList.csv')
 colors_df = pd.read_csv(r'TeamColors.csv')  # Load the team colors from a CSV file
 
 # Filter active columns and exclude the "Dimension" category
