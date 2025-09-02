@@ -25,7 +25,7 @@ st.markdown(
 # Load data
 teams_df = pd.read_csv('teams.csv')
 colors_df = pd.read_csv('TeamColors.csv')
-schedule_df = pd.read_csv('Schedule2024.csv')
+schedule_df = pd.read_csv('Schedule2025.csv')
 
 # Set default selected teams
 default_teams = ['BYU', 'Utah']

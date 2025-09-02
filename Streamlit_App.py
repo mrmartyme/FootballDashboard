@@ -81,22 +81,32 @@ if page == "Team Stats Dashboard":
         st.session_state.stat_to_plot = []  # Clear previous selections
         st.session_state.last_stat_category = stat_category  # Update to the new category
 
-    if 'stat_to_plot' not in st.session_state:
-        st.session_state.stat_to_plot = ['RushNetYdsPer', 'PassYdsPerComp']
+    #if 'stat_to_plot' not in st.session_state:
+    #    st.session_state.stat_to_plot = ['RushNetYdsPer', 'PassYdsPerComp']
 
     # Stat selection dropdown, with the option for multiple if toggled
     if st.session_state.allow_multiple_stats:
+        # Filter the current stat selections to include only those in the new category
+        current_stats = [stat for stat in st.session_state.stat_to_plot if stat in categorized_stats[stat_category]]
+
+        # Update the multiselect with the filtered stats, maintaining the current selection
         st.session_state.stat_to_plot = st.sidebar.multiselect(
             'Select Stat(s) to Plot', categorized_stats[stat_category],
-            default=st.session_state.stat_to_plot
+            default=current_stats
         )
     else:
+        # If a single stat is allowed, maintain the last selected stat if it belongs to the current category
+        current_stat = st.session_state.stat_to_plot[0] if st.session_state.stat_to_plot and \
+                                                           st.session_state.stat_to_plot[0] in categorized_stats[
+                                                               stat_category] else None
+
+        # Update the selectbox with the last stat maintained if it's in the new category
         st.session_state.stat_to_plot = [st.sidebar.selectbox(
             'Select Stat to Plot', categorized_stats[stat_category],
-            index=0 if st.session_state.stat_to_plot else None
+            index=categorized_stats[stat_category].index(current_stat) if current_stat else 0
         )]
 
-    # Graph type selection with scatter plot as default
+    # Graph type selection with Bar Chart as default
     if 'graph_type' not in st.session_state:
         st.session_state.graph_type = "Bar Chart"
 
@@ -191,7 +201,7 @@ elif page == "Team Schedules":
 
     teams_df = pd.read_csv('teams.csv')
     colors_df = pd.read_csv('TeamColors.csv')
-    schedule_df = pd.read_csv('Schedule2024.csv')
+    schedule_df = pd.read_csv('Schedule2025.csv')
 
     # Set default selected teams
     if 'selected_teams' not in st.session_state:
