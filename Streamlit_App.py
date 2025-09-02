@@ -201,7 +201,7 @@ elif page == "Team Schedules":
 
     teams_df = pd.read_csv('teams.csv')
     colors_df = pd.read_csv('TeamColors.csv')
-    schedule_df = pd.read_csv('Schedule2025.csv')
+    schedule_df = pd.read_csv('Schedule2024.csv')
 
     # Set default selected teams
     if 'selected_teams' not in st.session_state:
